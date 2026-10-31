@@ -4,18 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ma séance sport</title>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;600&family=Cinzel:wght@700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f3f1ec;--ink:#1c1b19;--muted:#6b675f;--card:#fff;--line:#d9d5cb;--work:#e8431f;--rest:#1f7a6d;--prep:#c98a00;--on:#fff;
+:root{--bg:#f3ead6;--ink:#2b2218;--muted:#6f6350;--card:#fffaf0;--line:#dccfb0;--gold:#9a6f0b;--work:#b3261e;--rest:#2f6f5e;--prep:#8d6a10;--on:#fff;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1917;--ink:#f3f1ec;--muted:#a09b90;--card:#262522;--line:#3a3834;--work:#ff5a36;--rest:#2fa797;--prep:#e0a21a}}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0d0b;--ink:#f4ead2;--muted:#a79d86;--card:#1a1814;--line:#3a3427;--gold:#e0b04a;--work:#c7311f;--rest:#2f7d69;--prep:#a67c14}}
 *{box-sizing:border-box}
 html,body{height:100%;margin:0}
 body{background:var(--bg);color:var(--ink);font-family:Barlow,system-ui,sans-serif;font-size:17px;transition:background .25s}
 body.work{background:var(--work);color:var(--on)}
 body.rest{background:var(--rest);color:var(--on)}
 body.prep{background:var(--prep);color:var(--on)}
-body.done{background:var(--ink);color:var(--bg)}
+body.done{background:var(--bg);color:var(--ink)}
 main{max-width:480px;margin:0 auto;padding:20px;min-height:100%;display:flex;flex-direction:column}
 h1{font:800 28px 'Barlow Condensed',sans-serif;margin:8px 0 16px}
 h2{font:800 20px 'Barlow Condensed',sans-serif;margin:22px 0 10px}
@@ -48,17 +48,28 @@ button:focus-visible,input:focus-visible{outline:3px solid currentColor;outline-
 .bar i{display:block;height:100%;width:0;background:currentColor}
 .seg{display:flex;gap:6px;margin-bottom:14px}.seg button{flex:1;font:800 18px 'Barlow Condensed',sans-serif;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}.seg button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .card .seg{margin-bottom:10px}.card .seg button{font-size:16px;padding:8px}
-#home.off{display:none}.back{background:none;border:0;color:var(--muted);font:600 16px Barlow,sans-serif;padding:8px 0;cursor:pointer;text-align:left}.sname{width:100%;font:800 28px 'Barlow Condensed',sans-serif;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink)}.days{display:flex;gap:6px;margin-bottom:6px}.days button{flex:1;min-width:0;padding:10px 0;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:600 15px Barlow,sans-serif;cursor:pointer}.days button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}.acts{display:flex;gap:8px;margin-top:10px}.acts .btn{margin-top:0;font-size:20px;padding:12px}.acts .btn:first-child{flex:2}.acts .btn:last-child{flex:1}.btn.alt{background:transparent;border:1px solid var(--line);color:var(--ink)}.card.hl{border:2px solid var(--work)}
+#home.off{display:none}.back{background:none;border:0;color:var(--muted);font:600 16px Barlow,sans-serif;padding:8px 0;cursor:pointer;text-align:left}.sname{width:100%;font:800 28px 'Barlow Condensed',sans-serif;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink)}.days{display:flex;gap:6px;margin-bottom:6px}.days button{flex:1;min-width:0;padding:10px 0;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:600 15px Barlow,sans-serif;cursor:pointer}.days button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}.acts{display:flex;gap:8px;margin-top:10px}.acts .btn{margin-top:0;font-size:20px;padding:12px}.acts .btn:first-child{flex:2}.acts .btn:last-child{flex:1}.btn.alt{background:transparent;border:1px solid var(--line);color:var(--ink)}.card.hl{border:2px solid var(--gold)}
 .tag{margin:-10px 0 8px;color:var(--muted);font-weight:600;font-size:18px}
+#home h1{font-family:Cinzel,Georgia,serif;letter-spacing:.04em;font-size:30px;text-align:center;color:var(--gold);margin:6px 0 16px}#home .tag{text-align:center;font-family:Cinzel,Georgia,serif}
+.hero{text-align:center;color:var(--gold);margin-top:6px}.hero svg{width:min(78%,280px);height:auto}
+.hello{font-weight:600;text-align:center;margin:14px 0 2px}.phrase{text-align:center;color:var(--muted);font-style:italic;margin:0 0 10px}.week{text-align:center;font-weight:600;color:var(--gold);margin:0 0 6px}
+.em{font-size:26px;align-self:center}
+.ringwrap{position:relative;margin:auto;width:min(70vw,300px);aspect-ratio:1;display:flex;align-items:center;justify-content:center}.ringwrap .time{margin:0;font-size:clamp(90px,30vw,140px)}
+.ring{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}.ring circle{fill:none;stroke-width:4}.rb{stroke:rgba(255,255,255,.25)}.rf{stroke:currentColor;stroke-linecap:round;stroke-dasharray:289}
+@keyframes pu{50%{transform:scale(1.05)}}.pulse{animation:pu .5s ease-in-out infinite}
+.bar{display:none}body.done .rf,body.done .time,body.done .phase{color:var(--gold);stroke:var(--gold)}body.done .time{stroke:none}
+.cf{position:fixed;top:-14px;width:8px;height:14px;opacity:.9;pointer-events:none;z-index:5;animation:cf linear forwards}@keyframes cf{to{transform:translateY(105vh) rotate(720deg)}}
 .load{font:800 clamp(24px,7vw,34px) 'Barlow Condensed',sans-serif;margin-top:6px;min-height:1.2em}
-@media (prefers-reduced-motion:reduce){body{transition:none}}
+@media (prefers-reduced-motion:reduce){body{transition:none}.pulse{animation:none}.cf{display:none}}
 </style>
 </head>
 <body>
 <main>
 <section id="home">
+<div class="hero" id="hero"></div>
 <h1>Ma séance sport</h1>
 <p class="tag">Force et honneur !</p>
+<p class="hello" id="hello"></p><p class="phrase" id="phrase"></p><p class="week" id="week"></p>
 <div id="today"></div>
 <h2>Mes séances</h2>
 <div id="slist"></div>
@@ -85,7 +96,7 @@ button:focus-visible,input:focus-visible{outline:3px solid currentColor;outline-
 <div class="phase" id="phase"></div>
 <div class="name" id="name"></div>
 <div class="load" id="load"></div>
-<div class="time" id="time"></div>
+<div class="ringwrap" id="rw"><svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><circle class="rb" cx="50" cy="50" r="46"/><circle class="rf" id="rf" cx="50" cy="50" r="46"/></svg><div class="time" id="time"></div></div>
 <div class="info" id="info"></div>
 <div class="next" id="next"></div>
 <div class="bar"><i id="prog"></i></div>
@@ -105,7 +116,7 @@ try{var st=JSON.parse(localStorage.getItem('intervalle3')||'null');if(st&&Array.
 if(!store.sessions.length)store.sessions.push({id:Date.now(),name:'Ma séance',days:[],cfg:cfg});
 function norm(c){c.prep=c.prep==null?10:c.prep;c.gap=c.gap==null?30:c.gap;c.mode=c.mode||'ex';c.circ=c.circ||3;c.ex.forEach(function(e){e.m=e.m||'t';e.q=e.q||10})}
 store.sessions.forEach(function(s){s.days=s.days||[];norm(s.cfg)});
-var origin='home',cur=store.sessions[0],delArm=false;
+var origin='home',cur=store.sessions[0],delArm=false,startedAt=0;
 function save(){try{localStorage.setItem('intervalle3',JSON.stringify(store))}catch(e){}}
 function fmt(n){return n>=60?Math.floor(n/60)+':'+String(n%60).padStart(2,'0'):n+' s'}
 function clamp(v,a,b){return Math.max(a,Math.min(b,v))}
@@ -137,7 +148,7 @@ $('gap-l').textContent=ci?'Pause entre les tours':'Pause entre exercices';$('gap
 var L=$('list');L.innerHTML='';
 cfg.ex.forEach(function(e,i){
 var c=mk('div','card'),h=mk('div','head'),inp=mk('input');inp.value=e.n;inp.placeholder='Nom de l’exercice';inp.setAttribute('aria-label','Nom de l’exercice '+(i+1));
-inp.oninput=function(){e.n=inp.value;save()};h.appendChild(inp);
+var em=mk('span','em',emo(e.n));h.appendChild(em);inp.oninput=function(){e.n=inp.value;em.textContent=emo(e.n);save()};h.appendChild(inp);
 if(cfg.ex.length>1){var del=mk('button','','Supprimer');del.onclick=function(){cfg.ex.splice(i,1);save();draw()};h.appendChild(del)}
 c.appendChild(h);var sg=mk('div','seg');[['t','Durée'],['r','Répétitions']].forEach(function(o){var b=mk('button',e.m===o[0]?'on':'',o[1]);b.onclick=function(){e.m=o[0];save();draw()};sg.appendChild(b)});c.appendChild(sg);var g=mk('div','grid');if(cfg.mode==='circ')g.style.gridTemplateColumns='repeat(2,1fr)';
 [e.m==='r'?['q','Répétitions',1]:['w','Travail',5],['r','Repos',5],['k','Tours',1]].filter(function(f){return cfg.mode==='ex'||f[0]!=='k'}).forEach(function(f){var k=f[0],st=f[2];
@@ -182,29 +193,41 @@ if(r<cfg.circ&&cfg.gap>0)phases.push({t:'rest',d:cfg.gap,e:n-1,r:r,K:cfg.circ,ga
 function enter(i){idx=i;if(i>=phases.length)return finish();var p=phases[i],e=cfg.ex[p.e],n=cfg.ex.length;
 left=p.d*1000;end=Date.now()+left;lastTick=-1;document.body.className=p.t;
 $('phase').textContent=p.gap?(cfg.mode==='ex'?'Changement':'Pause'):names[p.t];
-$('name').textContent=p.gap?nm(p.nx):nm(p.e);
+var ni=p.gap?p.nx:p.e;$('name').textContent=emo(nm(ni))+' '+nm(ni);
 $('info').textContent=p.gap?(cfg.mode==='ex'?'Exercice '+(p.nx+1)+' sur '+n:'Tour '+(p.r+1)+' sur '+p.K):'Tour '+p.r+' sur '+p.K+' · Exercice '+(p.e+1)+' sur '+n;
 var nx=phases[i+1];
 $('next').textContent=!nx?'Dernier effort !':(nx.t==='work'&&nx.e!==p.e&&!p.gap?'Ensuite : '+nm(nx.e):'');
 if(nx&&nx.gap)$('next').textContent='Ensuite : pause, puis '+nm(nx.nx);
 var rp=!!p.reps;$('pause').style.display=rp?'none':'';$('skip').textContent=rp?'Terminé ✓':'Passer';$('skip').className=rp?'btn':'btn ghost';
-if(rp){$('phase').textContent='Répétitions';$('time').textContent=p.reps;$('prog').style.width='0%'}
+if(rp){$('phase').textContent='Répétitions';$('time').textContent=p.reps;$('prog').style.width='0%';$('rf').style.strokeDashoffset=0;$('rw').classList.remove('pulse')}
 var tp=(p.t!=='work'&&nx&&nx.t==='work')?nx:p,cx=loadFor(tp.e,tp.r);$('load').textContent=cx>0?(p.t==='work'?'Charge : ':'Prochaine charge : ')+cx+' kg':'';
 if(i>0){beep(p.t==='work'?980:660,.45);buzz(p.t==='work'?[200,80,200]:150)}render()}
 function render(){var p=phases[idx];if(p.reps)return;var ms=paused?left:Math.max(0,end-Date.now()),sec=Math.ceil(ms/1000);
-$('time').textContent=sec;$('prog').style.width=(100*(1-ms/(p.d*1000)))+'%';
+$('time').textContent=sec;$('prog').style.width=(100*(1-ms/(p.d*1000)))+'%';$('rf').style.strokeDashoffset=289*(1-ms/(p.d*1000));$('rw').classList.toggle('pulse',sec<=3&&sec>0&&!paused);
 if(!paused&&sec<=3&&sec>0&&sec!==lastTick){lastTick=sec;beep(520,.12)}
 if(!paused&&ms<=0)enter(idx+1)}
 function finish(){clearInterval(timer);timer=null;document.body.className='done';$('phase').textContent='Bravo !';$('name').textContent='Séance terminée';$('load').textContent='';$('time').textContent='✓';
-$('info').textContent=cfg.ex.length+' exercice'+(cfg.ex.length>1?'s':'')+' terminé'+(cfg.ex.length>1?'s':'');$('next').textContent='';$('prog').style.width='100%';$('pause').style.display='none';$('skip').style.display='none';$('stop').textContent='Retour';
+var n=cfg.ex.length,mn=Math.max(1,Math.round((Date.now()-startedAt)/60000)),mx=0;
+cfg.ex.forEach(function(e,i){var K=cfg.mode==='circ'?cfg.circ:e.k;for(var q=1;q<=K;q++)mx=Math.max(mx,loadFor(i,q))});
+store.log=store.log||[];store.log.push(Date.now());save();
+$('info').textContent=n+' exercice'+(n>1?'s':'')+' · '+mn+' min';
+$('next').textContent='Séances cette semaine : '+weekCount()+(mx>0?' · Charge max '+mx+' kg':'');
+$('prog').style.width='100%';$('rf').style.strokeDashoffset=0;$('rw').classList.remove('pulse');confetti();$('pause').style.display='none';$('skip').style.display='none';$('stop').textContent='Retour';
 beep(784,.2);setTimeout(function(){beep(988,.2)},220);setTimeout(function(){beep(1175,.4)},440);buzz([300,100,300,100,500]);release()}
 async function lock(){try{if(navigator.wakeLock)wl=await navigator.wakeLock.request('screen')}catch(e){}}
 function release(){try{wl&&wl.release();wl=null}catch(e){}}
 $('go').onclick=function(){build();paused=false;$('pause').style.display='';$('skip').style.display='';$('pause').textContent='Pause';$('stop').textContent='Arrêter';
-show('none');$('run').classList.add('on');beep(1,.01);lock();enter(0);clearInterval(timer);timer=setInterval(render,100)};
+show('none');startedAt=Date.now();$('run').classList.add('on');beep(1,.01);lock();enter(0);clearInterval(timer);timer=setInterval(render,100)};
 $('skip').onclick=function(){if(timer){paused=false;$('pause').textContent='Pause';enter(idx+1)}};
 $('pause').onclick=function(){if(!timer)return;if(!paused){left=Math.max(0,end-Date.now());paused=true;$('pause').textContent='Reprendre'}else{paused=false;end=Date.now()+left;$('pause').textContent='Pause'}};
 $('stop').onclick=function(){clearInterval(timer);timer=null;release();document.body.className='';$('run').classList.remove('on');show(origin);renderHome()};
+var PH=['Chaque série te rapproche de ton meilleur niveau.','La régularité bat l’intensité.','Pas à pas, charge après charge.','Aujourd’hui, tu es plus fort qu’hier.','Sois fier de chaque effort.','Une série à la fois.','La discipline fait toute la différence.'];
+function logo(f,c){var d='<rect x="6" y="58" width="10" height="42" rx="3"/><rect x="18" y="66" width="8" height="26" rx="2"/><rect x="26" y="76" width="44" height="6"/><rect x="70" y="66" width="8" height="26" rx="2"/><rect x="80" y="58" width="10" height="42" rx="3"/>';
+return '<svg xmlns="http://www.w3.org/2000/svg" width="300" height="140" viewBox="0 0 300 140" role="img" aria-label="Casque de gladiateur entre deux haltères" style="fill:'+f+'"><g>'+d+'</g><g transform="translate(300,0) scale(-1,1)">'+d+'</g><path d="M108 88C108 58 126 42 150 42S192 58 192 88V106C192 112 188 116 182 116H172V100H128V116H118C112 116 108 112 108 106Z"/><path d="M120 46C128 12 172 12 180 46C168 30 132 30 120 46Z"/><rect x="122" y="76" width="56" height="9" rx="3" style="fill:'+c+'"/><rect x="145" y="76" width="10" height="30" rx="3" style="fill:'+c+'"/></svg>'}
+function emo(n){n=(n||'').toLowerCase();var m=[[/d[eé]velopp|bench|press|barre|halt[eè]r|curl|traction|rowing|tirage/,'🏋️'],[/pompe|dips|triceps/,'💪'],[/squat|fente|jambe|mollet|deadlift|soulev/,'🦵'],[/cours|corde|saut|burpee|jumping|sprint|v[eé]lo|rameur/,'🏃'],[/gainage|planche|abdo|crunch|yoga|[eé]tir/,'🧘']];for(var i=0;i<m.length;i++)if(m[i][0].test(n))return m[i][1];return '💪'}
+function weekCount(){var d=new Date(),m=new Date(d.getFullYear(),d.getMonth(),d.getDate()-((d.getDay()+6)%7)).getTime();return (store.log||[]).filter(function(t){return t>=m}).length}
+function confetti(){try{if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;var cs=['#e0b04a','#c7311f','#f4ead2','#2f7d69'];for(var i=0;i<46;i++){var d=document.createElement('i');d.className='cf';d.style.left=Math.random()*100+'vw';d.style.background=cs[i%4];d.style.animationDuration=(2.2+Math.random()*2)+'s';d.style.animationDelay=Math.random()*.8+'s';document.body.appendChild(d);setTimeout(function(x){x.remove()},5500,d)}}catch(e){}}
+(function(){try{var img=new Image();img.onload=function(){var cv=document.createElement('canvas');cv.width=cv.height=180;var x=cv.getContext('2d');x.fillStyle='#0e0d0b';x.fillRect(0,0,180,180);var w=164,h=w*140/300;x.drawImage(img,8,(180-h)/2,w,h);var l=document.createElement('link');l.rel='apple-touch-icon';l.href=cv.toDataURL('image/png');document.head.appendChild(l)};img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(logo('#e0b04a','#0e0d0b'))}catch(e){}})();
 var DL=['Di','Lu','Ma','Me','Je','Ve','Sa'],DN=['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
 function show(w){$('home').classList.toggle('off',w!=='home');$('setup').classList.toggle('off',w!=='setup')}
 function sum(s){var o=cfg;cfg=s.cfg;var t=total(),r=cfg.ex.some(function(e){return e.m==='r'}),n=cfg.ex.length;cfg=o;return n+' exercice'+(n>1?'s':'')+' · '+(r?'≥ ':'')+Math.round(t/60)+' min'}
@@ -212,7 +235,7 @@ function sCard(s,hl){var c=mk('div',hl?'card hl':'card');c.appendChild(mk('b',''
 var ds=[1,2,3,4,5,6,0].filter(function(d){return s.days.indexOf(d)>-1}).map(function(d){return DL[d]}).join(' · ');c.appendChild(mk('small','lbl',ds||'Non planifiée'));
 var a=mk('div','acts'),g=mk('button','btn','Démarrer'),m=mk('button','btn alt','Modifier');
 g.onclick=function(){cfg=s.cfg;origin='home';$('go').onclick()};m.onclick=function(){openS(s)};a.appendChild(g);a.appendChild(m);c.appendChild(a);return c}
-function renderHome(){var td=new Date().getDay(),T=$('today');T.innerHTML='';T.appendChild(mk('h2','','Aujourd’hui · '+DN[td]));
+function renderHome(){var td=new Date().getDay(),T=$('today'),hr=new Date().getHours(),wc=weekCount();$('hero').innerHTML=logo('currentColor','var(--bg)');$('hello').textContent=hr<12?'Bonjour !':hr<18?'Bon après-midi !':'Bonsoir !';$('phrase').textContent=PH[Math.floor(Date.now()/864e5)%PH.length];$('week').textContent=wc+' séance'+(wc>1?'s':'')+' cette semaine';T.innerHTML='';T.appendChild(mk('h2','','Aujourd’hui · '+DN[td]));
 var pl=store.sessions.filter(function(s){return s.days.indexOf(td)>-1});
 if(!pl.length)T.appendChild(mk('p','lbl','Rien de prévu. Planifie une séance (bouton Modifier) ou lance-en une ci-dessous.'));
 pl.forEach(function(s){T.appendChild(sCard(s,true))});
